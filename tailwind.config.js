@@ -7,12 +7,15 @@ module.exports = {
     screens: {
       sm: '480px',
       md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      lg: '960px',
+      xl: '1280px',
     },
     fontFamily: {
      'body': ['Montserrat', 'sans-serif'],
     },
+      fontSize: {
+        '7xl': '5.25rem',
+      },
     extend: {
       colors: {
         teal: colors.teal
