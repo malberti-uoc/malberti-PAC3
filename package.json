@@ -6,9 +6,10 @@
   "scripts": {
     "parcel:dev": "parcel src/index.html -p 8123 --open",
     "parcel:build": "parcel build src/index.html --public-url ./ --out-dir dist --no-source-maps --no-cache",
+	"stylelint": "stylelint src/**/*.scss",
     "clean": "rimraf dist .cache .cache-loader",
-    "dev": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build",
+    "dev": "npm-run-all stylelint clean parcel:dev",
+    "build": "npm-run-all stylelint clean parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "repository": {
